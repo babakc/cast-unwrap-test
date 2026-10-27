@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cast unwrap test receiver</title>
+  <script src="https://www.gstatic.com/cast/sdk/libs/caf_receiver/v3/cast_receiver_framework.js"></script>
+  <style>
+    body { margin: 0; background: #101820; color: white; font-family: sans-serif; }
+    cast-media-player { position: absolute; inset: 0; }
+    #info { position: fixed; top: 1.5rem; left: 1.5rem; z-index: 9999; padding: .7rem 1rem; background: rgba(0,0,0,.8); border-radius: .4rem; font-size: 1.2rem; }
+  </style>
+</head>
+<body>
+  <cast-media-player></cast-media-player>
+  <div id="info">Unwrap test receiver ready</div>
+  <script type="module" src="./receiver.mjs"></script>
+</body>
+</html>
